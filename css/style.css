@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#grid_wrapper {
+    display: grid;
+    grid-template-columns: ;
+    grid-template-rows: ;
+    grid-template-areas: 
+    
+    ;
+}
+
+nav {
+
+}
+
+.nav-active {
+    transform: translate(600px);
+}/
+
+.burger_line {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+    border-radius: 20%;
+    transition: all 0,5s;
+}
+
+.crossed_line #line_2 {
+    opacity: 0;
+}
+
+.crossed_line #line_1 {
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.crossed_line #line_3 {
+    transform: rotate(45deg) translate(-5px,6px);
+}
