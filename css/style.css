@@ -6,20 +6,12 @@
 
 #grid_wrapper {
     display: grid;
-    grid-template-columns: ;
-    grid-template-rows: ;
-    grid-template-areas: 
-    
-    ;
 }
 
-nav {
-
-}
 
 .nav-active {
     transform: translate(600px);
-}/
+}
 
 .burger_line {
     width: 25px;
