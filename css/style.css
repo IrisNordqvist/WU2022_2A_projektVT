@@ -6,21 +6,98 @@
 
 #grid_wrapper {
     display: grid;
+    grid-template-columns: minmax(200px,1fr) 200px;
+    grid-template-rows: 50px 500px 400px 400px 50px;
+    grid-template-areas: 
+    "he na"
+    "s1 s1"
+    "s2 s2"
+    "s3 s3"
+    "fo fo"
+    ;
 }
 
+header {
+    grid-area: he;
+    background-color: palevioletred;
+}
+
+nav {
+    grid-area: na;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: blue;
+}
+
+#nav-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 500px;
+    background-color: red;
+    position: absolute;
+    right: 0px;
+    top: -500px;
+    width: 200px;
+    list-style: none;
+    transition: all 0.5s;
+}
 
 .nav-active {
     transform: translate(600px);
+}
+
+#nav-links a {
+    text-decoration: none;
+    color: lightsteelblue;
+    letter-spacing: 0.1875rem;
+    font-weight: bold;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    width: 200px;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-links a:hover {
+    color: darkgray;
+    background-color: darkgreen;
+    transition: ease 0.4s;
+}
+
+#section_1 {
+    grid-area: s1;
+    background-color: chartreuse;
+}
+
+#section_2 {
+    grid-area: s2;
+    background-color: coral;
+}
+
+#section_3 {
+    grid-area: s3;
+    background-color: yellow;
+}
+
+footer {
+    grid-area: fo;
+    background-color: brown;
 }
 
 .burger_line {
     width: 25px;
     height: 3px;
     background-color: black;
-    margin: 5px;
-    border-radius: 20%;
-    transition: all 0,5s;
+    margin: 4.5px;
+    border-radius: 10%;
+    transition: all 0.5s;
 }
+
 
 .crossed_line #line_2 {
     opacity: 0;
@@ -31,5 +108,10 @@
 }
 
 .crossed_line #line_3 {
-    transform: rotate(45deg) translate(-5px,6px);
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
+#burger {
+    margin-right: 87.5px;
+    cursor: pointer;
 }
