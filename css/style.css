@@ -7,7 +7,7 @@
 #grid_wrapper {
     display: grid;
     grid-template-columns: minmax(200px,1fr) 200px;
-    grid-template-rows: 50px 450px 400px 400px 50px;
+    grid-template-rows: 50px 400px 400px 400px 50px;
     grid-template-areas: 
     "he na"
     "s1 s1"
@@ -20,6 +20,12 @@
 header {
     grid-area: he;
     background-color: palevioletred;
+    display: flex;
+    justify-content: left;
+}
+
+#titel {
+    margin: 8px;
 }
 
 nav {
@@ -91,6 +97,73 @@ nav {
 #section_3_hem {
     grid-area: s3;
     background-color: coral;
+}
+
+#section_1_om_oss {
+    grid-area: s1;
+    background-color: lightseagreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#section_2_om_oss {
+    grid-area: s2;
+    background-color: lightseagreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#section_3_om_oss {
+    grid-area: s3;
+    background-color: lightseagreen;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.articles_om_oss {
+    background-color: burlywood;
+    border-radius: 15%;
+    padding: 5%;
+    margin: 10px;
+    
+}
+
+#section_1_kost {
+    grid-area: s1;
+    background-color: lightseagreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#kost_bild_1 {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#section_2_kost {
+    grid-area: s2;
+    background-color: lightcoral;
+    display: flex;
+    align-items: center;
+}
+
+#section_3_kost {
+    grid-area: s3;
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+}
+
+.articles_kost {
+    border: 5px solid ;
+    border-radius: 5%;
+    padding: 20px;
 }
 
 footer {
