@@ -6,8 +6,10 @@
 
 #grid_wrapper {
     display: grid;
+    height: 100%;
+    width: 100%;
     grid-template-columns: minmax(200px,1fr) 200px;
-    grid-template-rows: 50px 400px 400px 400px 50px;
+    grid-template-rows: 50px 300px 300px 300px 50px;
     grid-template-areas: 
     "he na"
     "s1 s1"
@@ -19,7 +21,7 @@
 
 header {
     grid-area: he;
-    background-color: palevioletred;
+    background-color: rgb(128, 173, 128);
     display: flex;
     justify-content: left;
 }
@@ -33,7 +35,7 @@ nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-color: blue;
+    background-color: rgb(128, 173, 128);
 }
 
 #nav-links {
@@ -42,7 +44,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     height: 500px;
-    background-color: blue;
+    background-color: rgb(128, 173, 128);
     position: absolute;
     right: 0px;
     top: -550.5px;
@@ -57,12 +59,12 @@ nav {
 
 #nav-links a {
     text-decoration: none;
-    color: lightsteelblue;
+    color: rgb(6, 6, 145);
     letter-spacing: 0.1875rem;
     font-weight: bold;
     font-size: 1.25rem;
     text-transform: uppercase;
-    width: 200px;
+    width: 180px;
     height: 3rem;
     display: flex;
     justify-content: center;
@@ -70,105 +72,121 @@ nav {
 }
 
 #nav-links a:hover {
-    color: darkgray;
-    background-color: darkgreen;
+    color: white;
+    background-color: rgb(7, 75, 7);
     transition: ease 0.4s;
 }
 
-#section_1 {
+#section_1_hem {
     grid-area: s1;
-    background-color: lightseagreen;
 }
 
 #hem_bild {
     width: 100%;
 }
 
-#section_2 {
+#section_2_hem {
     grid-area: s2;
-    background-color: coral;
-}
-
-#section_3 {
-    grid-area: s3;
-    background-color: yellow;
+    background-color: rgb(165, 202, 165);
 }
 
 #section_3_hem {
     grid-area: s3;
-    background-color: coral;
+    background-color: rgb(165, 202, 165);
 }
 
-#section_1_om_oss {
-    grid-area: s1;
-    background-color: lightseagreen;
+.sections_om_oss {
+    background-color: rgb(165, 202, 165);
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+
+#section_1_om_oss {
+    grid-area: s1;
 }
 
 #section_2_om_oss {
     grid-area: s2;
-    background-color: lightseagreen;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 #section_3_om_oss {
     grid-area: s3;
-    background-color: lightseagreen;
-    display: flex;
-    align-items: center;
-    justify-content: center
 }
 
 .articles_om_oss {
-    background-color: burlywood;
+    background-color: rgb(128, 173, 128);
     border-radius: 15%;
     padding: 5%;
     margin: 10px;
-    
+    height: 200px;
 }
 
-#section_1_kost {
-    grid-area: s1;
-    background-color: lightseagreen;
+.sections_kost{
+    background-color: rgb(165, 202, 165);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#kost_bild_1 {
+#section_1_kost {
+    grid-area: s1;
+}
+
+#section_2_kost {
+    grid-area: s2;
+}
+
+#section_3_kost {
+    grid-area: s3;
+}
+
+.kost_bilder {
     height: 150px;
     width: 150px;
     border-radius: 50%;
     display: inline-block;
 }
 
-#section_2_kost {
-    grid-area: s2;
-    background-color: lightcoral;
-    display: flex;
-    align-items: center;
-}
-
-#section_3_kost {
-    grid-area: s3;
-    background-color: lightgray;
-    display: flex;
-    align-items: center;
-}
-
 .articles_kost {
-    border: 5px solid ;
-    border-radius: 5%;
-    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+}
+
+.divs_kost {
+    display: flex;
+    flex-direction: column;
+}
+
+.sections_traning {
+    background-color: rgb(165, 202, 165);
+    display: flex;
+    align-items: center;
+}
+
+#section_1_traning {
+    grid-area: s1;
+    display: flex;
+    justify-content: left;
+}
+
+#section_2_traning {
+    grid-area: s2;
+    display: flex;
+    justify-content: right;
+}
+
+#section_3_traning {
+    grid-area: s3;
+    display: flex;
+    justify-content: left;
 }
 
 footer {
     grid-area: fo;
-    background-color: brown;
+    background-color: rgb(128, 173, 128);
 }
 
 .burger_line {
