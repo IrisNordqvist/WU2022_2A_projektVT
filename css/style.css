@@ -33,8 +33,8 @@ header {
 nav {
     grid-area: na;
     display: flex;
-    justify-content: right;
     align-items: center;
+    justify-content: end;
     background-color: rgb(128, 173, 128);
 }
 
@@ -109,6 +109,8 @@ nav {
 #section_2_hem {
     grid-area: s2;
     padding: 10px;
+    display: flex;
+    align-items: center;
 }
 
 #section_3_hem {
@@ -139,8 +141,18 @@ nav {
     grid-area: s3;
 }
 
+#bild_om_oss {
+    height: 100px;
+    width: auto;
+}
+
+#bild_om_oss_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .articles_om_oss {
-    background-color: ;
     border-radius: 15%;
     padding: 20px;
     margin: 20px;
@@ -174,13 +186,13 @@ nav {
     display: inline-block;
 }
 
-.articles_kost {
+.divs_kost {
     display: flex;
     flex-direction: row;
-    padding: 30px;
+    padding: 15px;
 }
 
-.divs_kost {
+.articles_kost {
     display: flex;
     flex-direction: column;
 }
@@ -212,7 +224,6 @@ nav {
 .articles_traning {
     margin: 10px;
     background-color: rgb(128, 173, 128);
-    width: ;
     padding: 20px;
     border-radius: 5px 20px;
 }
@@ -245,7 +256,7 @@ footer {
 }
 
 #burger {
-    margin-right: 15px;
+    margin-right: 10px;
     cursor: pointer;
 }
 
