@@ -40,7 +40,7 @@ nav {
     grid-area: na;
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: flex-end;
     background-color: rgb(128, 173, 128);
 }
 
@@ -99,6 +99,12 @@ nav {
     flex-direction: column;
     align-items: center;
     font-size: 1.5rem;
+    text-decoration: none;
+}
+
+#knapp_link {
+    text-decoration: none;
+    color: black;
 }
 
 #knapp_hem a:hover {
